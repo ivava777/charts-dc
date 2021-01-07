@@ -1,6 +1,7 @@
 {
   "name": "charts-dc",
   "version": "0.0.0",
+   "homepage": "https://ivava777.github.io/charts-dc/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prettier-format": "prettier --config .prettierrc src/**/*.ts --write"
+    "prettier-format": "prettier --config .prettierrc src/**/*.ts --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +26,7 @@
     "@angular/platform-browser-dynamic": "~11.0.6",
     "@angular/router": "~11.0.6",
     "@ngneat/until-destroy": "^8.0.3",
+    "angular-cli-ghpages": "^1.0.0-rc.1",
     "dc": "^4.2.3",
     "normalize.css": "^8.0.1",
     "rxjs": "~6.6.0",

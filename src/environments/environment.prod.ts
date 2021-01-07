@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  dataFileUrl: 'assets/data.csv'
 };
